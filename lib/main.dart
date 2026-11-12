@@ -14,6 +14,14 @@ class StudyFlashcardApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flashcard Study App',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF6554D9),
+        ),
+        scaffoldBackgroundColor: const Color(0xFFF8F7FF),
+        fontFamily: 'Roboto',
+      ),
       home: const SplashScreen(),
     );
   }
